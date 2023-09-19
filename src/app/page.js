@@ -129,8 +129,24 @@ export default function Home() {
         </section>
         <section>
           <div className='flex justify-center py-28'>
-            <div className='bg-regal-gray flex justify-center w-2/5 h-96 border-solid border rounded-lg'>
+            <div className='bg-regal-gray w-2/5 h-96 rounded-lg'>
+              <div className='ml-5 mt-5'>
 
+                <img
+                  src={'/Curso_C.webp'}
+                  style={{ height: '60px', width: '60px', borderRadius: '6%' }}
+
+                />
+                <h1 className='text-xl font-semibold mt-5'>Private Algorithms teacher</h1>
+                <p className='font-light text-zinc-400'>2023 - PRESENT</p>
+                <p className='font-medium mt-3 mr-5 text-base'>The "C Programming: Algorithms 1 and Algorithms 2" course represents 
+                  a comprehensive and illuminating journey into the world of algorithms
+                   within the context of the C programming language. <br/><br/>These two interconnected 
+                   courses form a dynamic educational experience that is meticulously crafted 
+                   to empower students with a profound understanding of algorithm design, analysis, 
+                   and proficient implementation, all while harnessing the expressive power of the
+                    C programming language.</p>
+              </div>
             </div>
           </div>
         </section>

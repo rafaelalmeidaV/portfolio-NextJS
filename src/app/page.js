@@ -17,8 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" px-20">
-        <section className="min-h-screen">
+      <main>
+        <section className="min-h-screen px-20">
           <nav className='py-10 mb-12 flex justify-between items-center'>
             <h1 className='text-xl text-white font-mono'>DevelopedBy</h1>
             <ul className='flex item-center'>
@@ -31,7 +31,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className='flex '>
-            <div className='flex-grow text-center p-10 py-60'>
+            <div className='flex-grow text-center p-10 py-56'>
               <h2 className='text-5xl py-2 text-teal-400 font-medium'>Rafael Almeida Vasconcelos</h2>
               <h3 className='text-2xl py-2'>Mobile Software Engineer</h3>
               <p className='py-5'>
@@ -63,9 +63,10 @@ export default function Home() {
               <AiFillGithub />
             </div>
           </div>
+        </section>
+        <section>
+          <div className=' bg-zinc-800 py-32'>
 
-          <div className='my-24'>
-            <h2 className='text-3xl text-center text-teal-400 font-medium mb-36'>Projects</h2>
             <div className='flex justify-center'>
               <div className='mx-2'>
                 <img
@@ -76,11 +77,11 @@ export default function Home() {
                 />
                 <div className='bg-regal-gray w-80 h-72 rounded-b-lg'>
                   <h4 className='pl-4 pt-4 font-semibold'>Mage GPT gerador RPG</h4>
-                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>The D&D Character Generator is an AI-powered application that takes basic user inputs and provides 
-                    a complete character sheet for Dungeons & Dragons (D&D) based on those inputs. 
+                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>The D&D Character Generator is an AI-powered application that takes basic user inputs and provides
+                    a complete character sheet for Dungeons & Dragons (D&D) based on those inputs.
                     This app aims to simplify the character creation process for D&D players and Dungeon Masters.</p>
-                    <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiTypescript className='text-blue-600 bg-white mt-1 ml-1'/></div>
-                    <div><FaGooglePlay className='h-7 w-7 ml-4'/></div>
+                  <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiTypescript className='text-blue-600 bg-white mt-1 ml-1' /></div>
+                  <div><FaGooglePlay className='h-7 w-7 ml-4' /></div>
                 </div>
               </div>
 
@@ -94,34 +95,46 @@ export default function Home() {
                 <div className='bg-regal-gray w-80 h-72 rounded-b-lg'>
                   <h4 className='pl-4 pt-4 font-semibold'>Noteroom</h4>
                   <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>Noteroom is a mobile application designed to provide users with a
-                   convenient and immersive reading experience on their smartphones.
+                    convenient and immersive reading experience on their smartphones.
                     It serves as a digital book platform, allowing users to access,
-                     read, and manage a wide variety of books in digital format.</p>
-                    <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiJavascript className='text-yellow-400 bg-black mt-1 ml-1'/></div>
-                    <div><AiFillGithub className='h-7 w-7 ml-4'/></div>
+                    read, and manage a wide variety of books in digital format.</p>
+                  <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiJavascript className='text-yellow-400 bg-black mt-1 ml-1' /></div>
+                  <div><AiFillGithub className='h-7 w-7 ml-4' /></div>
                 </div>
               </div>
 
               <div className='mx-2'>
                 <img
-                  src={'/mageGpt.png'}
+                  src={'/pomodoro-timer.jpg'}
                   width={320}
                   height={320}
                   style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
                 />
                 <div className='bg-regal-gray w-80 h-72 rounded-b-lg'>
-                  <h4 className='pl-4 pt-4 font-semibold'>Mage GPT gerador RPG</h4>
-                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>The D&D Character Generator is an AI-powered application that takes basic user inputs and provides 
-                    a complete character sheet for Dungeons & Dragons (D&D) based on those inputs. 
-                    This app aims to simplify the character creation process for D&D players and Dungeon Masters.</p>
-                    <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiTypescript className='text-blue-600 bg-white mt-1 ml-1'/></div>
-                    <div><FaGooglePlay className='h-7 w-7 ml-4'/></div>
+                  <h4 className='pl-4 pt-4 font-semibold'>Py Pomodoro</h4>
+                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>PyPomodoro is a Python-based Pomodoro timer application designed to help
+                    users boost productivity and manage their time effectively.
+                    It follows the Pomodoro Technique, a time management method
+                    that encourages work intervals</p>
+                  <div className='py-4 pl-5 flex flex-row'><img
+                    src={'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png'}
+                    className="h-6 flex"
+                  /></div>
+                  <div><AiFillGithub className='h-7 w-7 ml-4' /></div>
                 </div>
               </div>
 
             </div>
           </div>
         </section>
+        <section>
+          <div className='flex justify-center py-28'>
+            <div className='bg-regal-gray flex justify-center w-2/5 h-96 border-solid border rounded-lg'>
+
+            </div>
+          </div>
+        </section>
+
       </main>
     </div>
   )

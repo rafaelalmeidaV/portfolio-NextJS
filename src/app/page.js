@@ -1,44 +1,125 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { BsFillMoonStarsFill} from 'react-icons/bs'
+import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { BiLogoReact } from 'react-icons/bi'
+import { FaPython } from 'react-icons/fa'
+import { SiJavascript, SiTypescript } from 'react-icons/si'
+import { FaGooglePlay } from 'react-icons/fa'
+import Image from 'next/image'
+
 
 export default function Home() {
   return (
 
-    <div>
+    <div >
       <Head>
         <title>Rafael Almeida Dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-black px-10">
+      <main className=" px-20">
         <section className="min-h-screen">
           <nav className='py-10 mb-12 flex justify-between items-center'>
             <h1 className='text-xl text-white font-mono'>DevelopedBy</h1>
             <ul className='flex item-center'>
               <li className='text-white'>
                 <BsFillMoonStarsFill className='cursor-pointer text-2xl' />
-                </li>
+              </li>
               <li >
                 <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a>
               </li>
             </ul>
           </nav>
-          <div className='text-center p-10'>
-            <h2 className=' text-5xl py-2 text-teal-600 font-medium'>Rafael Almeida Vasconcelos</h2>
-            <h3 className='text-2xl py-2'>Mobile Software Engineer</h3>
-            <p className='text-md py-5 leading-8'> 
-               I'm a mobile software engineer. I've worked with a wide range of technologies, from native Android and iOS development to cross-platform solutions like React Native and Flutter. I'm also a big fan of the open-source community and I've contributed to some projects like React Native and React Native Firebase.              
-            </p>
+          <div className='flex '>
+            <div className='flex-grow text-center p-10 py-60'>
+              <h2 className='text-5xl py-2 text-teal-400 font-medium'>Rafael Almeida Vasconcelos</h2>
+              <h3 className='text-2xl py-2'>Mobile Software Engineer</h3>
+              <p className='py-5'>
+                I'm a mobile software engineer. I've worked with a wide range of technologies
+              </p>
+              <div className='flex justify-center gap-6 py-1 text-sky-500'>
+                <img
+                  src={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png'}
+                  className="h-6 flex"
+                />
+                <img
+                  src={'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png'}
+                  className="h-6 flex"
+                />
+                <img
+                  src={'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png'}
+                  className="h-6 flex"
+                />
+                <img
+                  src={'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png'}
+                  className="h-6 flex"
+                />
+
+              </div>
+            </div>
+
+            <div className='flex flex-col justify-center gap-16 text-5xl '>
+              <AiFillLinkedin />
+              <AiFillGithub />
+            </div>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3'>
-          <AiFillLinkedin/>
-          <AiFillGithub />
-          </div>
-          <div className='text-9xl flex justify-center gap-16 py-3 text-sky-500'>
-            <FaReact />
+
+          <div className='my-24'>
+            <h2 className='text-3xl text-center text-teal-400 font-medium mb-36'>Projects</h2>
+            <div className='flex justify-center'>
+              <div className='mx-2'>
+                <img
+                  src={'/mageGpt.png'}
+                  width={320}
+                  height={320}
+                  style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
+                />
+                <div className='bg-regal-gray w-80 h-72 rounded-b-lg'>
+                  <h4 className='pl-4 pt-4 font-semibold'>Mage GPT gerador RPG</h4>
+                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>The D&D Character Generator is an AI-powered application that takes basic user inputs and provides 
+                    a complete character sheet for Dungeons & Dragons (D&D) based on those inputs. 
+                    This app aims to simplify the character creation process for D&D players and Dungeon Masters.</p>
+                    <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiTypescript className='text-blue-600 bg-white mt-1 ml-1'/></div>
+                    <div><FaGooglePlay className='h-7 w-7 ml-4'/></div>
+                </div>
+              </div>
+
+              <div className='mx-2'>
+                <img
+                  src={'/noteroom.png'}
+                  width={320}
+                  height={320}
+                  style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
+                />
+                <div className='bg-regal-gray w-80 h-72 rounded-b-lg'>
+                  <h4 className='pl-4 pt-4 font-semibold'>Noteroom</h4>
+                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>Noteroom is a mobile application designed to provide users with a
+                   convenient and immersive reading experience on their smartphones.
+                    It serves as a digital book platform, allowing users to access,
+                     read, and manage a wide variety of books in digital format.</p>
+                    <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiJavascript className='text-yellow-400 bg-black mt-1 ml-1'/></div>
+                    <div><AiFillGithub className='h-7 w-7 ml-4'/></div>
+                </div>
+              </div>
+
+              <div className='mx-2'>
+                <img
+                  src={'/mageGpt.png'}
+                  width={320}
+                  height={320}
+                  style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
+                />
+                <div className='bg-regal-gray w-80 h-72 rounded-b-lg'>
+                  <h4 className='pl-4 pt-4 font-semibold'>Mage GPT gerador RPG</h4>
+                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>The D&D Character Generator is an AI-powered application that takes basic user inputs and provides 
+                    a complete character sheet for Dungeons & Dragons (D&D) based on those inputs. 
+                    This app aims to simplify the character creation process for D&D players and Dungeon Masters.</p>
+                    <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiTypescript className='text-blue-600 bg-white mt-1 ml-1'/></div>
+                    <div><FaGooglePlay className='h-7 w-7 ml-4'/></div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
       </main>

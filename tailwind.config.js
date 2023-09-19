@@ -6,12 +6,16 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
+    extend: { 
+      colors: {
+        'regal-gray': '#383c44',
+      },
       fontFamily: { 
         burtons: "burtons",
-
+        inherit: "inherit",
       },
       backgroundImage: {
+        'img-1': "url('/public/fundo-preto-abstrato-da-grade-digital.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',

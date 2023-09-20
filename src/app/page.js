@@ -6,6 +6,7 @@ import { FaPython } from 'react-icons/fa'
 import { SiJavascript, SiTypescript } from 'react-icons/si'
 import { FaGooglePlay } from 'react-icons/fa'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -59,8 +60,9 @@ export default function Home() {
             </div>
 
             <div className='flex flex-col justify-center gap-16 text-5xl '>
-              <AiFillLinkedin />
-              <AiFillGithub />
+              <a href='https://www.linkedin.com/in/rafael-almeida-vasconcelos-b14629235/'><AiFillLinkedin className='cursor-pointer'/></a>
+              
+              <a href='https://github.com/rafaelalmeidaV'><AiFillGithub /></a>
             </div>
           </div>
         </section>
@@ -81,7 +83,7 @@ export default function Home() {
                     a complete character sheet for Dungeons & Dragons (D&D) based on those inputs.
                     This app aims to simplify the character creation process for D&D players and Dungeon Masters.</p>
                   <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiTypescript className='text-blue-600 bg-white mt-1 ml-1' /></div>
-                  <div><FaGooglePlay className='h-7 w-7 ml-4' /></div>
+                  <div><a href='https://play.google.com/store/apps/details?id=com.anonymous.mobileescola'><FaGooglePlay className='h-7 w-7 ml-4' /></a></div>
                 </div>
               </div>
 
@@ -99,7 +101,7 @@ export default function Home() {
                     It serves as a digital book platform, allowing users to access,
                     read, and manage a wide variety of books in digital format.</p>
                   <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiJavascript className='text-yellow-400 bg-black mt-1 ml-1' /></div>
-                  <div><AiFillGithub className='h-7 w-7 ml-4' /></div>
+                  <div><a href='https://github.com/rafaelalmeidaV'><AiFillGithub className='h-7 w-7 ml-4' /></a></div>
                 </div>
               </div>
 
@@ -120,7 +122,7 @@ export default function Home() {
                     src={'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png'}
                     className="h-6 flex"
                   /></div>
-                  <div><AiFillGithub className='h-7 w-7 ml-4' /></div>
+                  <div><a href='https://github.com/rafaelalmeidaV'><AiFillGithub className='h-7 w-7 ml-4' /></a></div>
                 </div>
               </div>
 
@@ -139,7 +141,7 @@ export default function Home() {
                 />
                 <h1 className='text-xl font-semibold mt-5'>Private Algorithms teacher</h1>
                 <p className='font-light text-zinc-400'>2023 - PRESENT</p>
-                <p className='font-medium mt-3 mr-5 text-base'>The "C Programming: Algorithms 1 and Algorithms 2" course represents 
+                <p className='font-light mt-3 mr-5 text-base'>The "C Programming: Algorithms 1 and Algorithms 2" course represents 
                   a comprehensive and illuminating journey into the world of algorithms
                    within the context of the C programming language. <br/><br/>These two interconnected 
                    courses form a dynamic educational experience that is meticulously crafted 

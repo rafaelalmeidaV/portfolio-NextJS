@@ -107,12 +107,12 @@ export default function Home() {
                 <SiJavascript className='text-yellow-400 bg-black mt-1 ml-1' />
                 <SiTypescript className='text-blue-600 bg-white mt-1 ml-1' />
                 <Image
-                    src={'/Python-logo-notext.svg.png'}
-                    className="h-6 flex"
-                    width={24}
-                    height={24}
+                  src={'/Python-logo-notext.svg.png'}
+                  className="h-6 flex"
+                  width={24}
+                  height={24}
 
-                  />
+                />
 
               </div>
             </div>
@@ -128,8 +128,8 @@ export default function Home() {
           <br />
           <div className='bg-zinc-800 py-20'>
             <h1 className="flex justify-center text-xl mb-16">Projects</h1>
-            <div className='flex justify-center'>
-              <div className='mx-2'>
+            <div className='flex flex-col justify-center items-center sm:flex-row'>
+              <div className='mx-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5'>
                 <Image
                   src={'/mageGpt.png'}
                   width={320}
@@ -146,7 +146,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='mx-2'>
+              <div className='mx-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5'>
                 <Image
                   src={'/noteroom.png'}
                   width={320}
@@ -164,7 +164,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className='mx-2'>
+              <div className='mx-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5'>
                 <Image
                   src={'/pomodoro-timer.jpg'}
                   width={320}
@@ -181,11 +181,9 @@ export default function Home() {
                   <div><a href='https://github.com/rafaelalmeidaV'><AiFillGithub className='h-8 w-8 ml-4' /></a></div>
                 </div>
               </div>
-
-              
-
             </div>
           </div>
+
         </section>
         <section id='experience'>
           <div className='flex justify-center py-28'>

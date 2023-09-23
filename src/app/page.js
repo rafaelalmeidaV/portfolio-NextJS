@@ -17,7 +17,7 @@ import { SiWhatsapp } from 'react-icons/si'
 
 export default function Home() {
 
-  
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -56,7 +56,7 @@ export default function Home() {
       )
 
   }
-  
+
 
   return (
 
@@ -75,9 +75,9 @@ export default function Home() {
                   <a className='text-white px-4 py-2 rounded-md ml-8' href="#">Home</a>
                 </li>
                 <li >
-                  <a className=' text-white px-4 py-2 rounded-md ml-8' href=" #projects" onClick={ 
+                  <a className=' text-white px-4 py-2 rounded-md ml-8' href=" #projects" onClick={
                     () => {
-                      document.getElementById('projects').scrollIntoView()                      
+                      document.getElementById('projects').scrollIntoView()
                     }}>Projects</a>
                 </li>
                 <li >
@@ -120,15 +120,15 @@ export default function Home() {
 
             <div className='flex flex-col justify-center gap-16 text-5xl '>
               <a href='https://www.linkedin.com/in/rafael-almeida-vasconcelos-b14629235/'><AiFillLinkedin className='cursor-pointer' /></a>
-              <a href='https://wa.me/5535988329827'><SiWhatsapp/></a>
+              <a href='https://wa.me/5535988329827'><SiWhatsapp /></a>
               <a href='https://github.com/rafaelalmeidaV'><AiFillGithub /></a>
             </div>
           </div>
         </section>
         <section id='projects'>
-          <br/>
+          <br />
           <div className='bg-zinc-800 py-20'>
-          <h1 className="flex justify-center text-xl mb-16">Projects</h1>
+            <h1 className="flex justify-center text-xl mb-16">Projects</h1>
             <div className='flex justify-center'>
               <div className='mx-2'>
                 <img
@@ -191,13 +191,11 @@ export default function Home() {
         </section>
         <section id='experience'>
           <div className='flex justify-center py-28'>
-            <div className='bg-regal-gray w-2/5 h-96 rounded-lg'>
+            <div className='bg-regal-gray w-full md:w-2/5 h-auto md:h-96 rounded-lg overflow-auto'>
               <div className='ml-5 mt-5'>
-
                 <img
                   src={'/Curso_C.webp'}
                   style={{ height: '60px', width: '60px', borderRadius: '6%' }}
-
                 />
                 <h1 className='text-xl font-semibold mt-5'>Private Algorithms teacher</h1>
                 <p className='font-light text-zinc-400'>2023 - PRESENT</p>
@@ -212,6 +210,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
 
 
 

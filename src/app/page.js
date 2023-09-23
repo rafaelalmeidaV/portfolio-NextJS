@@ -127,9 +127,9 @@ export default function Home() {
         <section id='projects'>
           <br />
           <div className='bg-zinc-800 py-20'>
-            <h1 className="flex justify-center text-xl mb-16">Projects</h1>
-            <div className='flex flex-col justify-center items-center sm:flex-row'>
-              <div className='mx-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5'>
+            <h1 className="text-center text-xl mb-16">Projects</h1>
+            <div className='flex flex-wrap justify-center'>
+              <div className='mx-2 my-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5'>
                 <Image
                   src={'/mageGpt.png'}
                   width={320}
@@ -138,15 +138,13 @@ export default function Home() {
                 />
                 <div className='bg-regal-gray w-80 h-72 rounded-b-lg'>
                   <h4 className='pl-4 pt-4 font-semibold'>Mage GPT gerador RPG</h4>
-                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>The D&D Character Generator is an AI-powered application that takes basic user inputs and provides
-                    a complete character sheet for Dungeons & Dragons (D&D) based on those inputs.
-                    This app aims to simplify the character creation process for D&D players and Dungeon Masters.</p>
+                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>The D&D Character Generator is an AI-powered application that takes basic user inputs and provides a complete character sheet for Dungeons & Dragons (D&D) based on those inputs. This app aims to simplify the character creation process for D&D players and Dungeon Masters.</p>
                   <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiTypescript className='text-blue-600 bg-white mt-1 ml-1' /></div>
                   <div><a href='https://play.google.com/store/apps/details?id=com.anonymous.mobileescola'><FaGooglePlay className='h-7 w-7 ml-4' /></a></div>
                 </div>
               </div>
 
-              <div className='mx-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5'>
+              <div className='mx-2 my-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5'>
                 <Image
                   src={'/noteroom.png'}
                   width={320}
@@ -155,16 +153,13 @@ export default function Home() {
                 />
                 <div className='bg-regal-gray w-80 h-72 rounded-b-lg'>
                   <h4 className='pl-4 pt-4 font-semibold'>Noteroom</h4>
-                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>Noteroom is a mobile application designed to provide users with a
-                    convenient and immersive reading experience on their smartphones.
-                    It serves as a digital book platform, allowing users to access,
-                    read, and manage a wide variety of books in digital format.</p>
+                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>Noteroom is a mobile application designed to provide users with a convenient and immersive reading experience on their smartphones. It serves as a digital book platform, allowing users to access, read, and manage a wide variety of books in digital format.</p>
                   <div className='p-4 flex flex-row'><Image src={'/react-3.png'} width={24} height={24} />  <SiJavascript className='text-yellow-400 bg-black mt-1 ml-1' /></div>
                   <div><a href='https://github.com/rafaelalmeidaV'><AiFillGithub className='h-8 w-8 ml-4' /></a></div>
                 </div>
               </div>
 
-              <div className='mx-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5'>
+              <div className='mx-2 my-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5'>
                 <Image
                   src={'/pomodoro-timer.jpg'}
                   width={320}
@@ -173,16 +168,17 @@ export default function Home() {
                 />
                 <div className='bg-regal-gray w-80 h-72 rounded-b-lg'>
                   <h4 className='pl-4 pt-4 font-semibold'>Py Pomodoro</h4>
-                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>PyPomodoro is a Python-based Pomodoro timer application designed to help
-                    users boost productivity and manage their time effectively.
-                    It follows the Pomodoro Technique, a time management method
-                    that encourages work intervals</p>
+                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>PyPomodoro is a Python-based Pomodoro timer application designed to help users boost productivity and manage their time effectively. It follows the Pomodoro Technique, a time management method that encourages work intervals.</p>
                   <div className='p-4 flex flex-row ml-1'><Image src={'/Python-logo-notext.svg.png'} width={24} height={24} />  </div>
                   <div><a href='https://github.com/rafaelalmeidaV'><AiFillGithub className='h-8 w-8 ml-4' /></a></div>
                 </div>
               </div>
+
+              {/* Repita o mesmo padrão para outras divs */}
+
             </div>
           </div>
+
 
         </section>
         <section id='experience'>

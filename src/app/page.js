@@ -98,22 +98,21 @@ export default function Home() {
                 I'm a mobile software engineer. I've worked with a wide range of technologies
               </p>
               <div className='flex justify-center gap-6 py-1 text-sky-500'>
-                <img
-                  src={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png'}
+                <Image
+                  src={'/react-3.png'}
                   className="h-6 flex"
+                  width={24}
+                  height={24}
                 />
-                <img
-                  src={'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png'}
-                  className="h-6 flex"
-                />
-                <img
-                  src={'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png'}
-                  className="h-6 flex"
-                />
-                <img
-                  src={'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png'}
-                  className="h-6 flex"
-                />
+                <SiJavascript className='text-yellow-400 bg-black mt-1 ml-1' />
+                <SiTypescript className='text-blue-600 bg-white mt-1 ml-1' />
+                <Image
+                    src={'/Python-logo-notext.svg.png'}
+                    className="h-6 flex"
+                    width={24}
+                    height={24}
+
+                  />
 
               </div>
             </div>
@@ -131,7 +130,7 @@ export default function Home() {
             <h1 className="flex justify-center text-xl mb-16">Projects</h1>
             <div className='flex justify-center'>
               <div className='mx-2'>
-                <img
+                <Image
                   src={'/mageGpt.png'}
                   width={320}
                   height={320}
@@ -148,7 +147,7 @@ export default function Home() {
               </div>
 
               <div className='mx-2'>
-                <img
+                <Image
                   src={'/noteroom.png'}
                   width={320}
                   height={320}
@@ -166,25 +165,24 @@ export default function Home() {
               </div>
 
               <div className='mx-2'>
-                <img
+                <Image
                   src={'/pomodoro-timer.jpg'}
                   width={320}
                   height={320}
                   style={{ borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }}
                 />
                 <div className='bg-regal-gray w-80 h-72 rounded-b-lg'>
-                  <h4 className='p-4 font-semibold'>Py Pomodoro</h4>
-                  <p className='p-4 text-xs text-zinc-300'>PyPomodoro is a Python-based Pomodoro timer application designed to help
+                  <h4 className='pl-4 pt-4 font-semibold'>Py Pomodoro</h4>
+                  <p className='pl-4 pt-4 pr-4 text-xs text-zinc-300'>PyPomodoro is a Python-based Pomodoro timer application designed to help
                     users boost productivity and manage their time effectively.
                     It follows the Pomodoro Technique, a time management method
                     that encourages work intervals</p>
-                  <div className='py-4 pl-5 flex flex-row'><img
-                    src={'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png'}
-                    className="h-6 flex"
-                  /></div>
+                  <div className='p-4 flex flex-row ml-1'><Image src={'/Python-logo-notext.svg.png'} width={24} height={24} />  </div>
                   <div><a href='https://github.com/rafaelalmeidaV'><AiFillGithub className='h-8 w-8 ml-4' /></a></div>
                 </div>
               </div>
+
+              
 
             </div>
           </div>
@@ -193,13 +191,15 @@ export default function Home() {
           <div className='flex justify-center py-28'>
             <div className='bg-regal-gray w-full md:w-2/5 h-auto md:h-96 rounded-lg overflow-auto'>
               <div className='ml-5 mt-5'>
-                <img
+                <Image
                   src={'/Curso_C.webp'}
-                  style={{ height: '60px', width: '60px', borderRadius: '6%' }}
+                  width={60}
+                  height={60}
+                  className='rounded'
                 />
                 <h1 className='text-xl font-semibold mt-5'>Private Algorithms teacher</h1>
                 <p className='font-light text-zinc-400'>2023 - PRESENT</p>
-                <p className='font-light mt-3 mr-5 text-base'>The "C Programming: Algorithms 1 and Algorithms 2" course represents
+                <p className='font-light mt-3 mr-5 text-base'>The C Programming: Algorithms 1 and Algorithms 2 course represents
                   a comprehensive and illuminating journey into the world of algorithms
                   within the context of the C programming language. <br /><br />These two interconnected
                   courses form a dynamic educational experience that is meticulously crafted

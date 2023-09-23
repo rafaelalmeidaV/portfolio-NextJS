@@ -95,7 +95,7 @@ export default function Home() {
               <h2 className='text-5xl py-2 text-teal-400 font-medium'>Rafael Almeida Vasconcelos</h2>
               <h3 className='text-2xl py-2'>Mobile Software Engineer</h3>
               <p className='py-5'>
-                I'm a mobile software engineer. I've worked with a wide range of technologies
+                Im a mobile software engineer. Ive worked with a wide range of technologies
               </p>
               <div className='flex justify-center gap-6 py-1 text-sky-500'>
                 <Image

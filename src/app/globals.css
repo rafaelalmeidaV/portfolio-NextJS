@@ -6,7 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --gray-1: #212121;
+  --gray-1: #0f172a;
 }
 
 @media (prefers-color-scheme: dark) {

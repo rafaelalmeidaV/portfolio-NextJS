@@ -19,6 +19,10 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* Define a cor de fundo como cinza */
-  background-color: var(--gray-1); /* Você pode ajustar a tonalidade de cinza desejada */
+  background-color: var(--gray-1); 
 }
+
+
+
+
+

@@ -22,6 +22,7 @@ export default function Home() {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
+
   function handleSubmit(e) {
 
     e.preventDefault()
@@ -60,7 +61,7 @@ export default function Home() {
 
   return (
 
-    <div>
+    <div >
       <Head>
         <title>Rafael Almeida Dev</title>
         <link rel="icon" href="/favicon.ico" />
@@ -209,7 +210,7 @@ export default function Home() {
 
 
       </main> */}
-      <main >
+      <main className='bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 '>
         <div className="flex justify-evenly pt-28">
           <div >
             <div><h2 className='text-5xl text-neutral-50 font-bold '>Rafael Almeida</h2></div>
@@ -250,7 +251,9 @@ export default function Home() {
 
             </div>
             <ul className='py-24'>
-              <li className='max-w-lg hover:bg-white hover:bg-opacity-10 hover:shadow-md hover:shadow-[#0f131f] h-36 rounded-lg transition-all hover:text-teal-300 hover:delay-150 '>
+
+              <li className='max-w-lg hover:bg-white hover:bg-opacity-10 hover:shadow-md hover:shadow-[#0f131f] min-h rounded-lg transition-all hover:text-teal-300 hover:delay-150 mt-5'>
+                <Link href="https://play.google.com/store/apps/details?id=com.anonymous.mobileescola">
                 <div className='flex'>
                   <div className=' ml-4 mt-4'>
                     <div className=' border-[2px] border-stone-700 rounded-sm'>
@@ -264,22 +267,25 @@ export default function Home() {
                   </div>
                   <div className='ml-4 mt-4 '>
                     <h1>MAGE-GPT: Gerador de RPG</h1>
-                    <p className='text-sm text-white text-opacity-50 max-w-xs'>Embark on a journey into a world of Dungeons & Dragons 5e adventures with the assistance of artificial intelligence.</p>
+                    <p className='text-sm text-white text-opacity-50 max-w-xs'> 
+                    Embark on a journey into a world of Dungeons & Dragons 5e adventures with the assistance of artificial intelligence.                    </p>
                     <div className='flex'>
-                      <div className='max-w-min bg-teal-900 text-teal-400 px-2 my-1 rounded-lg text-xs '> React </div>
-                      <div className='max-w-min bg-teal-900 text-teal-400 px-2 my-1 rounded-lg text-xs mx-2'> TypeScript </div>
+                      <div className='bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> React Native</div>
+                      <div className=' bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> TypeScript </div>
                     </div>
                   </div>
 
                 </div>
+                </Link>
               </li>
 
-              <li className='max-w-lg hover:bg-white hover:bg-opacity-10 hover:shadow-md hover:shadow-[#0f131f] h-36 rounded-lg transition-all hover:text-teal-300 hover:delay-150 mt-5'>
+              <li className='max-w-lg hover:bg-white hover:bg-opacity-10 hover:shadow-md hover:shadow-[#0f131f] min-h rounded-lg transition-all hover:text-teal-300 hover:delay-150 mt-5'>
+                <Link href="https://manga-app-mou-prd.vercel.app/">
                 <div className='flex'>
                   <div className=' ml-4 mt-4'>
                     <div className=' border-[2px] border-stone-700 rounded-sm'>
                       <Image
-                        src={'/mageGpt.png'}
+                        src={'/mangaSite.png'}
                         width={110}
                         height={70}
                         style={{ borderRadius: '10px' }}
@@ -287,15 +293,18 @@ export default function Home() {
                     </div>
                   </div>
                   <div className='ml-4 mt-4 '>
-                    <h1>MAGE-GPT: Gerador de RPG</h1>
-                    <p className='text-sm text-white text-opacity-50 max-w-xs'>Embark on a journey into a world of Dungeons & Dragons 5e adventures with the assistance of artificial intelligence.</p>
+                    <h1>Manga Reader</h1>
+                    <p className='text-sm text-white text-opacity-50 max-w-xs'> 
+                    Manga Reader is a web application designed to provide users with a convenient and immersive reading experience on their smartphones.
+                    </p>
                     <div className='flex'>
-                      <div className='max-w-min bg-teal-900 text-teal-400 px-2 my-1 rounded-lg text-xs '> React </div>
-                      <div className='max-w-min bg-teal-900 text-teal-400 px-2 my-1 rounded-lg text-xs mx-2'> TypeScript </div>
+                      <div className='bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> Next Js </div>
+                      <div className=' bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> TypeScript </div>
                     </div>
                   </div>
 
                 </div>
+                </Link>
               </li>
             </ul>
           </div>

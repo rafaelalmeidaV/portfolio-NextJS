@@ -250,60 +250,95 @@ export default function Home() {
               </h1>
 
             </div>
-            <ul className='py-24'>
 
+            <ul className='py-24'>
+              <li>
+                <div>
+                  <span className='font-bold text-white hover:border-b-2 hover:border-teal-400 max-w-min'>
+                    Curriculum ➝
+                  </span>
+                </div>
+              </li>
               <li className='max-w-lg hover:bg-white hover:bg-opacity-10 hover:shadow-md hover:shadow-[#0f131f] min-h rounded-lg transition-all hover:text-teal-300 hover:delay-150 mt-5'>
                 <Link href="https://play.google.com/store/apps/details?id=com.anonymous.mobileescola">
-                <div className='flex'>
-                  <div className=' ml-4 mt-4'>
-                    <div className=' border-[2px] border-stone-700 rounded-sm'>
-                      <Image
-                        src={'/mageGpt.png'}
-                        width={110}
-                        height={70}
-                        style={{ borderRadius: '10px' }}
-                      />
+                  <div className='flex'>
+                    <div className=' ml-4 mt-4'>
+                      <div className=' border-[2px] border-stone-700 rounded-sm'>
+                        <Image
+                          src={'/mageGpt.png'}
+                          width={110}
+                          height={70}
+                          style={{ borderRadius: '10px' }}
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className='ml-4 mt-4 '>
-                    <h1>MAGE-GPT: Gerador de RPG</h1>
-                    <p className='text-sm text-white text-opacity-50 max-w-xs'> 
-                    Embark on a journey into a world of Dungeons & Dragons 5e adventures with the assistance of artificial intelligence.                    </p>
-                    <div className='flex'>
-                      <div className='bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> React Native</div>
-                      <div className=' bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> TypeScript </div>
+                    <div className='ml-4 mt-4 '>
+                      <h1>MAGE-GPT: Gerador de RPG</h1>
+                      <p className='text-sm text-white text-opacity-50 max-w-xs'>
+                        Embark on a journey into a world of Dungeons & Dragons 5e adventures with the assistance of artificial intelligence.                    </p>
+                      <div className='flex'>
+                        <div className='bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> React Native</div>
+                        <div className=' bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> TypeScript </div>
+                      </div>
                     </div>
-                  </div>
 
-                </div>
+                  </div>
                 </Link>
               </li>
 
               <li className='max-w-lg hover:bg-white hover:bg-opacity-10 hover:shadow-md hover:shadow-[#0f131f] min-h rounded-lg transition-all hover:text-teal-300 hover:delay-150 mt-5'>
                 <Link href="https://manga-app-mou-prd.vercel.app/">
-                <div className='flex'>
-                  <div className=' ml-4 mt-4'>
-                    <div className=' border-[2px] border-stone-700 rounded-sm'>
-                      <Image
-                        src={'/mangaSite.png'}
-                        width={110}
-                        height={70}
-                        style={{ borderRadius: '10px' }}
-                      />
+                  <div className='flex'>
+                    <div className=' ml-4 mt-4'>
+                      <div className=' border-[2px] border-stone-700 rounded-sm'>
+                        <Image
+                          src={'/mangaSite.png'}
+                          width={110}
+                          height={70}
+                          style={{ borderRadius: '10px' }}
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className='ml-4 mt-4 '>
-                    <h1>Manga Reader</h1>
-                    <p className='text-sm text-white text-opacity-50 max-w-xs'> 
-                    Manga Reader is a web application designed to provide users with a convenient and immersive reading experience on their smartphones.
-                    </p>
-                    <div className='flex'>
-                      <div className='bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> Next Js </div>
-                      <div className=' bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> TypeScript </div>
+                    <div className='ml-4 mt-4 '>
+                      <h1>Manga Reader</h1>
+                      <p className='text-sm text-white text-opacity-50 max-w-xs'>
+                        Manga Reader is a web application designed to provide users with a convenient and immersive reading experience on their smartphones.
+                      </p>
+                      <div className='flex'>
+                        <div className='bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> Next Js </div>
+                        <div className=' bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> TypeScript </div>
+                      </div>
                     </div>
-                  </div>
 
-                </div>
+                  </div>
+                </Link>
+              </li>
+
+              <li className='max-w-lg hover:bg-white hover:bg-opacity-10 hover:shadow-md hover:shadow-[#0f131f] min-h rounded-lg transition-all hover:text-teal-300 hover:delay-150 mt-5'>
+                <Link href="https://github.com/rafaelalmeidaV">
+                  <div className='flex'>
+                    <div className=' ml-4 mt-4'>
+                      <div className=' border-[2px] border-stone-700 rounded-sm'>
+                        <Image
+                          src={'/noteroom.png'}
+                          width={110}
+                          height={70}
+                          style={{ borderRadius: '10px' }}
+                        />
+                      </div>
+                    </div>
+                    <div className='ml-4 mt-4 '>
+                      <h1>Noteroom</h1>
+                      <p className='text-sm text-white text-opacity-50 max-w-xs'>
+                        Noteroom is a mobile application designed to provide users with a convenient and immersive reading experience on their smartphones.
+                      </p>
+                      <div className='flex'>
+                        <div className='bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> React Native </div>
+                        <div className=' bg-teal-900 text-teal-400 px-2 my-2 rounded-lg text-xs mx-1'> JavaScript </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </Link>
               </li>
             </ul>

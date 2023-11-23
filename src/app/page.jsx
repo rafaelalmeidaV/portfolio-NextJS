@@ -254,9 +254,11 @@ export default function Home() {
             <ul className='py-24'>
               <li>
                 <div>
-                  <span className='font-bold text-white hover:border-b-2 hover:border-teal-400 max-w-min'>
-                    Curriculum ➝
-                  </span>
+                  <Link href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:7bd15cd3-d938-4ee0-b9f1-a174118db7e8">
+                    <span className='font-bold text-white hover:border-b-2 hover:border-teal-400 max-w-min'>
+                      Curriculum ➝
+                    </span>
+                  </Link>
                 </div>
               </li>
               <li className='max-w-lg hover:bg-white hover:bg-opacity-10 hover:shadow-md hover:shadow-[#0f131f] min-h rounded-lg transition-all hover:text-teal-300 hover:delay-150 mt-5'>

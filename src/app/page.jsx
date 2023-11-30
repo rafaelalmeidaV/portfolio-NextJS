@@ -67,7 +67,7 @@ export default function Home() {
       <div className='jumbo absolute -inset-[10px] opacity-50'>
       </div>
 
-          <Head>
+          <Head className='z-10'>
             <title>Rafael Almeida Dev</title>
             <link rel="icon" href="/favicon.ico" />
           </Head>
@@ -75,7 +75,7 @@ export default function Home() {
 
           <main className='bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 z-50'>
             <div className="flex justify-evenly pt-28">
-              <div >
+              <div>
                 <div><h2 className='text-5xl text-neutral-50 font-bold '>Rafael Almeida</h2></div>
                 <h3 className='text-2xl py-3'>Software Engineer</h3>
                 <p className='text-neutral-50 text-opacity-40'>

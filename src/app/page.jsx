@@ -73,7 +73,7 @@ export default function Home() {
           </Head>
 
 
-          <main className='bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 z-50'>
+          <main className='bg-black leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 z-50'>
             <div className="flex justify-evenly pt-28">
               <div>
                 <div><h2 className='text-5xl text-neutral-50 font-bold '>Rafael Almeida</h2></div>

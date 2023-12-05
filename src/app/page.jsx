@@ -73,11 +73,12 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
+        {/* flex flex-col justify-evenly sm:flex-row sm:flex sm:justify-center md:flex-row  pt-28 sm:pt-32 md:pt-36 lg:pt-40 xl:pt-44 2xl:pt-48 */}
 
         <main className='bg-black leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900'>
-          <div className="flex justify-evenly pt-28 ">
-            <div className='pr-20'>
-              <div className='fixed'>
+          <div className="lg:flex lg:justify-between lg:mx-7 2xl:justify-evenly xl:justify-evenly pt-28 sm:flex-row md:flex md:flex-row md:justify-center">
+            <div className='pr-20 sm:justify-center md:justify-center xl:mr-28'>
+              <div className='lg:fixed sm:mt-8 sm:mb-8 '>
                 <div><h2 className='text-5xl text-neutral-50 font-bold '>Rafael Almeida</h2></div>
                 <h3 className='text-2xl py-3'>Software Engineer</h3>
                 <p className='text-neutral-50 text-opacity-40'>
@@ -102,17 +103,17 @@ export default function Home() {
 
                   />
                 </div>
-                <div className='flex justify-start gap-6 py-3 bottom-24 fixed'>
-                  <Link href="https//:www.linkedin.com/in/rafael-almeida-1b1b3b1b3">
+                <div className='flex justify-start gap-6 py-3 bottom-24 lg:fixed sm:justify-start md:justify-start'>
+                  <Link href="https//www.linkedin.com/in/rafael-almeida-1b1b3b1b3">
                     <AiFillLinkedin className='text-2xl text-white hover:text-teal-400' />
                   </Link>
-                  <Link href="https//:www.github.com/rafaelalmeidaV">
+                  <Link href="https//www.github.com/rafaelalmeidaV">
                     <AiFillGithub className='text-2xl text-white hover:text-teal-400' />
                   </Link>
-                  <Link href="https://play.google.com/store/apps/details?id=com.anonymous.mobileescola">
+                  <Link href="https//play.google.com/store/apps/details?id=com.anonymous.mobileescola">
                     <FaGooglePlay className='text-2xl text-white hover:text-teal-400' />
                   </Link>
-                  <Link href="https://wa.me/qr/3KZ6J2Q2BQJ6J1">
+                  <Link href="https//wa.me/qr/3KZ6J2Q2BQJ6J1">
                     <SiWhatsapp className='text-2xl text-white hover:text-teal-400' />
                   </Link>
 
@@ -122,8 +123,8 @@ export default function Home() {
 
 
             </div>
-            <div>
-              <div className='max-w-lg text-neutral-400'>
+            <div >
+              <div className='max-w-lg text-neutral-400  '>
 
                 <h1 >
                   At 20, I am a <span class=" text-white">software engineering</span> student with expertise in

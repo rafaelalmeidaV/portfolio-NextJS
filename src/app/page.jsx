@@ -232,6 +232,14 @@ export default function Home() {
                     </div>
                   </Link>
                 </li>
+                <li>
+                  <div className='max-w-lg pt-20 text-sm text-white text-opacity-60'>
+                    <p>
+                    Loosely designed in <Link href="https://www.figma.com" target='_blank'><span class=" text-white hover:text-teal-400">Figma</span></Link> and coded in <Link href="https://code.visualstudio.com" target='_blank'><span class=" text-white hover:text-teal-400">Visual Studio Code </span></Link> 
+                     by yours truly. Built with <Link href="https://nextjs.org" target='_blank'><span class=" text-white hover:text-teal-400">Next.js</span> </Link>and <Link href="https://tailwindcss.com" target='_blank'><span class=" text-white hover:text-teal-400">Tailwind CSS</span></Link>, deployed with <Link href="https://vercel.com" target='_blank'><span class=" text-white hover:text-teal-400"> Vercel</span></Link>.
+                    </p>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>

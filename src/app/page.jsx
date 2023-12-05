@@ -102,20 +102,20 @@ export default function Home() {
                   />
                 </div>
                 <div className='flex justify-start gap-6 py-3 bottom-24 lg:fixed sm:justify-start md:justify-start'>
-                  <Link href="https//www.linkedin.com/in/rafael-almeida-1b1b3b1b3">
+                  <Link href="https://www.linkedin.com/in/rafael-almeida-1b1b3b1b3" target='_blank'>
                     <AiFillLinkedin className='text-2xl text-white hover:text-teal-400' />
                   </Link>
-                  <Link href="https//www.github.com/rafaelalmeidaV">
+                  <Link href="https://www.github.com/rafaelalmeidaV" target='_blank'>
                     <AiFillGithub className='text-2xl text-white hover:text-teal-400' />
                   </Link>
-                  <Link href="https//play.google.com/store/apps/details?id=com.anonymous.mobileescola">
+                  <Link href="https://play.google.com/store/apps/details?id=com.anonymous.mobileescola" target='_blank'>
                     <FaGooglePlay className='text-2xl text-white hover:text-teal-400' />
                   </Link>
-                  <Link href="https//wa.me/qr/3KZ6J2Q2BQJ6J1">
+                  <Link href="https://api.whatsapp.com/send?phone=553588329827" target='_blank'>
                     <SiWhatsapp className='text-2xl text-white hover:text-teal-400' />
                   </Link>
-
                 </div>
+
               </div>
 
 
@@ -247,7 +247,7 @@ export default function Home() {
 
                       <form className="form" onSubmit={handleSubmit} href="contact">
                         <input
-                          className="input text-white bg-black border-b-2 border-cyan-950"
+                          className="input text-white bg-black border-b-2 border-cyan-950 text-sm"
                           type="text"
                           placeholder="Name"
                           onChange={(e) => setName(e.target.value)}
@@ -255,7 +255,7 @@ export default function Home() {
                         />
 
                         <input
-                          className="input text-white bg-black border-b-2 border-cyan-950"
+                          className="input text-white bg-black border-b-2 border-cyan-950 text-sm"
                           type="text"
                           placeholder="Email"
                           onChange={(e) => setEmail(e.target.value)}
@@ -263,7 +263,7 @@ export default function Home() {
                         />
 
                         <textarea
-                          className="input text-white bg-black border-b-2 border-cyan-950"
+                          className="input text-white bg-black border-b-2 border-cyan-950 text-sm"
                           placeholder="Message..."
                           onChange={(e) => setMessage(e.target.value)}
                           value={message}

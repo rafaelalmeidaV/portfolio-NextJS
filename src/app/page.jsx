@@ -14,6 +14,7 @@ import emailjs from '@emailjs/browser'
 import { useRouter } from 'next/router'
 import './page.css';
 import { SiWhatsapp } from 'react-icons/si'
+import Light from './Components/light'
 
 
 export default function Home() {
@@ -65,15 +66,12 @@ export default function Home() {
 
     <div className=''>
       <div className=' inset-0'>
-        <div className='jumbo absolute -inset-[10px] opacity-50'>
-        </div>
+        <Light />
 
         <Head className='z-10'>
           <title>Rafael Almeida Dev</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
-        {/* flex flex-col justify-evenly sm:flex-row sm:flex sm:justify-center md:flex-row  pt-28 sm:pt-32 md:pt-36 lg:pt-40 xl:pt-44 2xl:pt-48 */}
 
         <main className='bg-black leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900'>
           <div className="lg:flex lg:justify-between lg:mx-7 2xl:justify-evenly xl:justify-evenly pt-28 sm:flex-row md:flex md:flex-row md:justify-center">

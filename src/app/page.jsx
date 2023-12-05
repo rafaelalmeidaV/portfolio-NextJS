@@ -144,7 +144,7 @@ export default function Home() {
                           View Resume
                           <FaArrowRight className='text-xs inline-block ml-4 transition-transform duration-300 transform translate-x-0 hover:translate-x-2' />
                         </span>
-                        
+
                       </div>
                     </Link>
 
@@ -235,48 +235,53 @@ export default function Home() {
                 <li>
                   <div className='max-w-lg pt-20 text-sm text-white text-opacity-60'>
                     <p>
-                    Loosely designed in <Link href="https://www.figma.com" target='_blank'><span class=" text-white hover:text-teal-400">Figma</span></Link> and coded in <Link href="https://code.visualstudio.com" target='_blank'><span class=" text-white hover:text-teal-400">Visual Studio Code </span></Link> 
-                     by yours truly. Built with <Link href="https://nextjs.org" target='_blank'><span class=" text-white hover:text-teal-400">Next.js</span> </Link>and <Link href="https://tailwindcss.com" target='_blank'><span class=" text-white hover:text-teal-400">Tailwind CSS</span></Link>, deployed with <Link href="https://vercel.com" target='_blank'><span class=" text-white hover:text-teal-400"> Vercel</span></Link>.
+                      Loosely designed in <Link href="https://www.figma.com" target='_blank'><span class=" text-white hover:text-teal-400">Figma</span></Link> and coded in <Link href="https://code.visualstudio.com" target='_blank'><span class=" text-white hover:text-teal-400">Visual Studio Code </span></Link>
+                      by yours truly. Built with <Link href="https://nextjs.org" target='_blank'><span class=" text-white hover:text-teal-400">Next.js</span> </Link>and <Link href="https://tailwindcss.com" target='_blank'><span class=" text-white hover:text-teal-400">Tailwind CSS</span></Link>, deployed with <Link href="https://vercel.com" target='_blank'><span class=" text-white hover:text-teal-400"> Vercel</span></Link>.
                     </p>
                   </div>
+                </li>
+
+                <li>
+                  <section id='contact'>
+                    <div className="container">
+                      <h1 className="title text-base">Contact</h1>
+
+                      <form className="form" onSubmit={handleSubmit} href="contact">
+                        <input
+                          className="input text-white bg-black border-b-2 border-cyan-950"
+                          type="text"
+                          placeholder="Name"
+                          onChange={(e) => setName(e.target.value)}
+                          value={name}
+                        />
+
+                        <input
+                          className="input text-white bg-black border-b-2 border-cyan-950"
+                          type="text"
+                          placeholder="Email"
+                          onChange={(e) => setEmail(e.target.value)}
+                          value={email}
+                        />
+
+                        <textarea
+                          className="input text-white bg-black border-b-2 border-cyan-950"
+                          placeholder="Message..."
+                          onChange={(e) => setMessage(e.target.value)}
+                          value={message}
+                        />
+                        <div className='flex justify-end mt-3'>
+                          <input className="button cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-sm text-sm w-1/4 " type="submit" value="Send" />
+                        </div>
+                      </form>
+                    </div>
+                  </section>
                 </li>
               </ul>
             </div>
           </div>
         </main>
 
-        {/* <section id='contact'>
-          <div className="container">
-            <h1 className="title text-xl">Contact</h1>
 
-            <form className="form" onSubmit={handleSubmit} href="contact">
-              <input
-                className="input text-cyan-950"
-                type="text"
-                placeholder="Digite seu nome"
-                onChange={(e) => setName(e.target.value)}
-                value={name}
-              />
-
-              <input
-                className="input text-cyan-950"
-                type="text"
-                placeholder="Digite seu email"
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-              />
-
-              <textarea
-                className="textarea text-cyan-950"
-                placeholder="Digite sua mensagem..."
-                onChange={(e) => setMessage(e.target.value)}
-                value={message}
-              />
-
-              <input className="button cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-md " type="submit" value="Send" />
-            </form>
-          </div>
-        </section> */}
       </div>
     </div>
 
